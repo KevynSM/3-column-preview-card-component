@@ -31,8 +31,7 @@ main {
     margin-bottom: 1rem;
 }
 
-.card {
-    /* width: 80%; */
+.card {    
     padding: 3rem;
 }
 
@@ -77,6 +76,10 @@ p {
     margin-top: 2rem;
     text-decoration: none;
     font-family: 'Lexend Deca', sans-serif;
+}
+
+.card a:hover {
+    transform: translateY(-5px);
 }
 
 .sedans a {
