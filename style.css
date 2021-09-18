@@ -1,0 +1,132 @@
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--Very-light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+main {
+    width: 345px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card {
+    /* width: 80%; */
+    padding: 3rem;
+}
+
+.sedans {
+    background-color: var(--Bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+
+.suvs {
+    background-color: var(--Dark-cyan);
+}
+
+.luxury {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+h2 {
+    color: var(--Very-light-gray);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+p {
+    color: var(--Transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    margin-top: 2rem;
+    width: 80%;
+}
+
+.card a {
+    display: inline-block;
+    background-color: var(--Very-light-gray);
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.sedans a {
+    color: var(--Bright-orange);
+}
+
+.suvs a {
+    color: var(--Very-dark-cyan);
+}
+
+.luxury a {
+    color: var(--Very-dark-cyan);
+}
+
+
+@media (min-width: 1005px) {
+    main {
+        width:1005px;
+        flex-direction: row;;
+    }
+
+    .sedans {        
+        border-radius: 10px 0 0 10px;
+    }
+
+    .luxury {        
+        border-radius: 0 10px 10px 0;
+    }
+
+    p { 
+        font-size: 0.8rem;
+    }
+
+    .card a {
+        color: var(--Transparent-white);
+        border: 1px solid var(--Transparent-white);
+        margin-top: 5rem;
+    }
+
+    .sedans a {
+        background-color: var(--Bright-orange);
+    }
+    
+    .suvs a {
+        background-color: var(--Very-dark-cyan);
+    }
+    
+    .luxury a {
+        background-color: var(--Very-dark-cyan);
+    }
+    
+
+}
