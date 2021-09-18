@@ -78,9 +78,6 @@ p {
     font-family: 'Lexend Deca', sans-serif;
 }
 
-.card a:hover {
-    transform: translateY(-5px);
-}
 
 .sedans a {
     color: var(--Bright-orange);
@@ -113,21 +110,25 @@ p {
         font-size: 0.8rem;
     }
 
-    .card a {
-        color: var(--Transparent-white);
-        border: 1px solid var(--Transparent-white);
+    .card a {        
         margin-top: 5rem;
     }
 
-    .sedans a {
+    .card a:hover {
+        color: var(--Transparent-white);
+        border: 1px solid var(--Transparent-white);
+        transform: translateY(-5px);
+    }
+
+    .sedans a:hover {
         background-color: var(--Bright-orange);
     }
     
-    .suvs a {
+    .suvs a:hover {
         background-color: var(--Very-dark-cyan);
     }
     
-    .luxury a {
+    .luxury a:hover {
         background-color: var(--Very-dark-cyan);
     }
     
