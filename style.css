@@ -112,6 +112,7 @@ p {
 
     .card a {        
         margin-top: 5rem;
+        transition: all 0.2s;
     }
 
     .card a:hover {
