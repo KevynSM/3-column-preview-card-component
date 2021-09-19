@@ -24,7 +24,7 @@ body {
 }
 
 main {
-    width: 345px;
+    width: 325px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,7 +63,7 @@ p {
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
     font-size: 0.8rem;
-    line-height: 1.2rem;
+    line-height: 1.5rem;
     margin-top: 2rem;
     width: 80%;
 }
@@ -92,10 +92,16 @@ p {
 }
 
 
-@media (min-width: 1005px) {
+@media (min-width: 975px) {
     main {
-        width:1005px;
+        width: 975px;
         flex-direction: row;;
+    }
+
+    .card {    
+        width: calc(975px / 3);
+        height: 518px;
+        padding: 3rem 0 3rem 3rem;
     }
 
     .sedans {        
@@ -107,11 +113,11 @@ p {
     }
 
     p { 
-        font-size: 0.8rem;
+        font-size: 0.95rem;
     }
 
     .card a {        
-        margin-top: 5rem;
+        margin-top: 7rem;
         transition: all 0.2s;
     }
 
